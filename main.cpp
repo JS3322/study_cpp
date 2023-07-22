@@ -1,5 +1,6 @@
 #include <iostream>
 #include "custom_module/add.h"
+#include "lib_opencv/use.h"
 
 /*
  * CMakeLists.txt
@@ -14,5 +15,9 @@
 int main() {
     std::cout << "Hello, World!" << std::endl;
     std::cout << "The sum of 3 and 4 is " << add(3, 4) << std::endl;
+
+    use ip("your_image.jpg");
+    ip.displayImage();
+
     return 0;
 }

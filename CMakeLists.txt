@@ -22,4 +22,4 @@ set(CMAKE_CXX_STANDARD 17)
 #        data_structure4.cpp
 #        # ...
 #        )
-add_executable(plc main.cpp custom_module/add.cpp custom_module/add.h)
+add_executable(plc main.cpp custom_module/add.cpp custom_module/add.h lib_opencv/use.cpp lib_opencv/use.h variable_init/use_variable.cpp variable_init/use_variable.h)

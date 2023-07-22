@@ -61,6 +61,18 @@ build CMakeFiles/plc.dir/custom_module/add.cpp.o: CXX_COMPILER__plc_Debug /Users
   OBJECT_DIR = CMakeFiles/plc.dir
   OBJECT_FILE_DIR = CMakeFiles/plc.dir/custom_module
 
+build CMakeFiles/plc.dir/lib_opencv/use.cpp.o: CXX_COMPILER__plc_Debug /Users/js/Cleancode/plc/lib_opencv/use.cpp || cmake_object_order_depends_target_plc
+  DEP_FILE = CMakeFiles/plc.dir/lib_opencv/use.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/plc.dir
+  OBJECT_FILE_DIR = CMakeFiles/plc.dir/lib_opencv
+
+build CMakeFiles/plc.dir/variable_init/use_variable.cpp.o: CXX_COMPILER__plc_Debug /Users/js/Cleancode/plc/variable_init/use_variable.cpp || cmake_object_order_depends_target_plc
+  DEP_FILE = CMakeFiles/plc.dir/variable_init/use_variable.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/plc.dir
+  OBJECT_FILE_DIR = CMakeFiles/plc.dir/variable_init
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target plc
@@ -69,7 +81,7 @@ build CMakeFiles/plc.dir/custom_module/add.cpp.o: CXX_COMPILER__plc_Debug /Users
 #############################################
 # Link the executable plc
 
-build plc: CXX_EXECUTABLE_LINKER__plc_Debug CMakeFiles/plc.dir/main.cpp.o CMakeFiles/plc.dir/custom_module/add.cpp.o
+build plc: CXX_EXECUTABLE_LINKER__plc_Debug CMakeFiles/plc.dir/main.cpp.o CMakeFiles/plc.dir/custom_module/add.cpp.o CMakeFiles/plc.dir/lib_opencv/use.cpp.o CMakeFiles/plc.dir/variable_init/use_variable.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/plc.dir
   POST_BUILD = :
