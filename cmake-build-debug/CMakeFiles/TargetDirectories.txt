@@ -1,0 +1,3 @@
+/Users/js/Cleancode/plc/cmake-build-debug/CMakeFiles/plc.dir
+/Users/js/Cleancode/plc/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/js/Cleancode/plc/cmake-build-debug/CMakeFiles/rebuild_cache.dir
