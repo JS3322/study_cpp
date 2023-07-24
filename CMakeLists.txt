@@ -13,13 +13,14 @@ set(CMAKE_CXX_STANDARD 17)
 
 #add_executable(my_exe   # 이후에 나오는 .cpp 파일을 사용해 .exe를 생성한다 or my_lib      # 이후에 나오는 .cpp 파일을 사용해 라이브러리를 생성한다
 #        main.cpp
-#        # 개행을 여러번 하여도 문제되지 않습니다.
+#        # 개행을 여러번 하여도 됨.
 #        feature1.cpp
 #        feature2.cpp
-#        algorithm3.cpp      # 상대 경로로 소스 코드를 찾아냅니다.
-#        # 현재 사용중인 CMakeList의 위치를 기준으로
-#        # 경로를 지시해야 합니다
+#        algorithm3.cpp      # 상대 경로로 소스 코드를 찾아냄.
+#        # 현재 사용중인 CMakeList의 위치를 기준으로 경로를 지시 : 상대경로
 #        data_structure4.cpp
 #        # ...
 #        )
-add_executable(plc main.cpp custom_module/add.cpp custom_module/add.h lib_opencv/use.cpp lib_opencv/use.h variable_init/use_variable.cpp variable_init/use_variable.h)
+add_executable(plc main.cpp custom_module/add.cpp custom_module/add.h)
+#add_executable(plc main.cpp custom_module/add.cpp custom_module/add.h lib_opencv/use.cpp lib_opencv/use.h variable_init/use_variable.cpp variable_init/use_variable.h)
+
